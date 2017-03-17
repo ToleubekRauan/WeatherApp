@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rauan.weatherapp.controllers.activities.MainActivity">
+
+    <!-- <VideoView
+         android:id="@+id/videoView"
+         android:layout_width="match_parent"
+         android:layout_alignParentBottom="true"
+         android:soundEffectsEnabled="false"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_height="match_parent" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/cityImage"/>
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="40sp"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewWeatherMain"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text="TextView"
+        android:layout_above="@+id/textViewTemp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp" />
+
+    <TextView
+        android:id="@+id/textViewTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textViewTempMax"
+        android:layout_alignBottom="@+id/textViewTempMax"
+        android:layout_alignRight="@+id/textViewWeatherMain"
+        android:layout_alignEnd="@+id/textViewWeatherMain" />
+
+    <TextView
+        android:id="@+id/textViewTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@+id/textViewWeatherMain"
+        android:layout_alignLeft="@+id/textViewWeatherMain"
+        android:layout_alignStart="@+id/textViewWeatherMain"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="80sp"
+        android:text="TextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textViewTempMax"
+        android:layout_alignStart="@+id/textViewTempMax" />
+</RelativeLayout>
